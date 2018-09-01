@@ -21,28 +21,42 @@ export default {
 		return {
 			menus: [
 				{
-					title: 'MENU ONE',
-					url: '/home',
+					title: '首页',
+					icon: 'dashboard',
 					children: [
 						{
-							title: 'MENU 1-1',
-							url: '/home'
+							title: '首页',
+							icon: 'send',
+							url: '/dashboard'
 						}, {
-							title: 'MENU 1-2',
-							url: '/home'
+							title: '统计',
+							icon: 'send',
+							url: '/analysis'
+						}, {
+							title: '监测',
+							icon: 'send',
+							url: '/dashboard'
+						}, {
+							title: '工作台',
+							icon: 'send',
+							url: '/workplace'
 						}
 					]
 				}, {
 					title: 'MENU TWO',
+					icon: 'send',
 					url: '/home'
 				}, {
 					title: 'MENU THREE',
+					icon: 'send',
 					url: '/home'
 				}, {
 					title: 'MENU FOUR',
+					icon: 'send',
 					url: '/home'
 				}, {
 					title: 'MENU FIVE',
+					icon: 'send',
 					url: '/home'
 				}
 			]
@@ -53,7 +67,7 @@ export default {
 
 <style lang="less">
 	.el-header{
-		background-color: #ccc5c5;
+		background-color: #0199f1;
 		font-size:36px;
 		line-height: 60px
 	}

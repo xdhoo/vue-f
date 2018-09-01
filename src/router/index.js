@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import home from '@/views/home'
-import HelloWorld from '@/components/HelloWorld'
-import sidebar from '@/components/sidebar'
+import workplace from '@/views/workplace'
+import analysis from '@/views/analysis'
+import dashboard from '@/views/dashboard'
 Vue.use(Router)
 
 export default new Router({
@@ -13,13 +14,20 @@ export default new Router({
 			component: home,
 			children: [
 				{
-					path: 'page',
-					component: HelloWorld
+					path: 'dashboard',
+					component: dashboard
 				}, {
-					path: 'side',
-					component: sidebar
+					path: 'workplace',
+					component: workplace
+				}, {
+					path: 'analysis',
+					component: analysis
 				}
 			]
+		}, {
+			path: '/',
+			redirect: '/dashboard'
+
 		}
 	]
 })
